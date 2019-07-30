@@ -61,7 +61,7 @@ class ChangePassword extends Component {
       //   <button type="submit">Change Password</button>
       // </form> 
 
-      <form className='auth-form 'onSubmit={this.onSignIn}>
+      <form className='auth-form 'onSubmit={this.onChangePassword}> 
   <div className='form-group' >
   <h3>Change Password</h3>
         <label htmlFor="oldpw"> Old Password</label>
