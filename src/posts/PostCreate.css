@@ -1,0 +1,26 @@
+
+.create-post { 
+    /* position: relative; */
+    padding: 50px; 
+    margin: 50px; 
+    align-items: center; 
+    width: 40%; 
+    float: center;
+} 
+
+/* .creare-form {
+    position: absolute; 
+    top: 50px; 
+    left: 50px; 
+    padding: 50%; 
+    margin: 50%; 
+    display: flex; 
+    align-items: center; 
+    width: 40%; 
+}  */
+
+.button{
+    margin: 20px;
+   display: flex; 
+   float: right;
+}

@@ -40,38 +40,85 @@ class SignUp extends Component {
     const { email, password, passwordConfirmation } = this.state
 
     return (
-      <form className='auth-form' onSubmit={this.onSignUp}>
-        <h3>Sign Up</h3>
+      // <form className='auth-form' onSubmit={this.onSignUp}>
+      //   <h3>Sign Up</h3>
 
-        <label htmlFor="email">Email</label>
-        <input
-          required
-          name="email"
-          value={email}
-          type="email"
-          placeholder="Email"
-          onChange={this.handleChange}
+      //   <label htmlFor="email">Email</label>
+      //   <input
+      //     required
+      //     name="email"
+      //     value={email}
+      //     type="email"
+      //     placeholder="Email"
+      //     onChange={this.handleChange}
+      //   />
+      //   <label htmlFor="password">Password</label>
+      //   <input
+      //     required
+      //     name="password"
+      //     value={password}
+      //     type="password"
+      //     placeholder="Password"
+      //     onChange={this.handleChange}
+      //   />
+      //   <label htmlFor="passwordConfirmation">Confirm Password</label>
+      //   <input
+      //     required
+      //     name="passwordConfirmation"
+      //     value={passwordConfirmation}
+      //     type="password"
+      //     placeholder="Confirm Password"
+      //     onChange={this.handleChange}
+      //   />
+      //   <button type="submit">Sign Up</button>
+      // </form> 
+
+
+
+<form className='auth-form 'onSubmit={this.onSignIn}>
+  <div className='form-group' >
+  <h3>Sign Up</h3>
+        <label htmlFor="exampleInputEmail1">Email address</label>
+        <input className="form-control" 
+        id="exampleInputEmail1" 
+        aria-describedby="emailHelp" 
+        placeholder="Enter email"
+        required
+        type="email"
+        name="email"
+        value={email}
+        onChange={this.handleChange}
         />
-        <label htmlFor="password">Password</label>
-        <input
-          required
-          name="password"
-          value={password}
-          type="password"
-          placeholder="Password"
-          onChange={this.handleChange}
+
+        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+<div className="form-group">
+        <label htmlFor="exampleInputPassword1">Password</label>
+        <input  className="form-control"  
+        id="exampleInputPassword1" 
+        placeholder="Password" 
+        required
+        name="password"
+        value={password}
+        type="password"
+        onChange={this.handleChange}
         />
-        <label htmlFor="passwordConfirmation">Confirm Password</label>
-        <input
-          required
+
+</div>
+<div className="form-group">
+<label htmlFor="passwordConfirmation">Confirm Password</label>
+        <input className="form-control" 
+        id="exampleInputPassword1"
+         required
           name="passwordConfirmation"
           value={passwordConfirmation}
           type="password"
-          placeholder="Confirm Password"
-          onChange={this.handleChange}
-        />
-        <button type="submit">Sign Up</button>
-      </form>
+         placeholder="Confirm Password"
+         onChange={this.handleChange}
+       />
+</div> 
+<button type="submit" class="btn btn-outline-secondary">Sign Up</button>
+</form>
     )
   }
 }

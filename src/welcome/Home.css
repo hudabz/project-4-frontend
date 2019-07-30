@@ -1,0 +1,22 @@
+.home-page{
+    background-image: url("./back2.jpeg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    height: 85vh; 
+    width: 80%;
+    position: absolute;  
+    top: 110px;   
+    left: 150px;
+    border-radius: 80px; 
+} 
+
+.home-pargraph{ 
+    color: gray; 
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 15px;  
+    /* margin: 90px;   */
+    padding: 100px; 
+    font-weight: bold; 
+} 

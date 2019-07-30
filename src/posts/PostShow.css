@@ -1,0 +1,21 @@
+
+.show-page{
+    display: flex; 
+    align-items: center;
+    margin: 60px;
+    background-color: aliceblue; 
+    background-color: rgba(255,255,255,0.3);
+    width: 40%;
+    padding: 25px;
+    border-radius: 20px; 
+    /* float:left; */
+    box-shadow: 8px 8px 8px black; 
+    text-align: center; 
+}
+
+.post-title{ 
+    font-size: 25px;
+    color: gray; 
+    margin: 5px;
+    text-decoration: none;
+}

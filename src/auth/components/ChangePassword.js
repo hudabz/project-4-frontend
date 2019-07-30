@@ -37,29 +37,59 @@ class ChangePassword extends Component {
     const { oldPassword, newPassword } = this.state
 
     return (
-      <form className='auth-form' onSubmit={this.onChangePassword}>
-        <h3>Change Password</h3>
+      // <form className='auth-form' onSubmit={this.onChangePassword}>
+      //   <h3>Change Password</h3>
 
-        <label htmlFor="oldpw">Old Password</label>
-        <input
-          required
-          name="oldPassword"
-          value={oldPassword}
-          type="password"
-          placeholder="Old Password"
-          onChange={this.handleChange}
+      //   <label htmlFor="oldpw">Old Password</label>
+      //   <input
+      //     required
+      //     name="oldPassword"
+      //     value={oldPassword}
+      //     type="password"
+      //     placeholder="Old Password"
+      //     onChange={this.handleChange}
+      //   />
+      //   <label htmlFor="newPassword">New Password</label>
+      //   <input
+      //     required
+      //     name="newPassword"
+      //     value={newPassword}
+      //     type="password"
+      //     placeholder="New Password"
+      //     onChange={this.handleChange}
+      //   />
+      //   <button type="submit">Change Password</button>
+      // </form> 
+
+      <form className='auth-form 'onSubmit={this.onSignIn}>
+  <div className='form-group' >
+  <h3>Change Password</h3>
+        <label htmlFor="oldpw"> Old Password</label>
+        <input 
+        className="form-control"
+        required
+            name="oldPassword"
+            value={oldPassword}
+            type="password"
+            placeholder="Old Password"
+            onChange={this.handleChange}
         />
+        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+<div className="form-group">
         <label htmlFor="newPassword">New Password</label>
-        <input
-          required
-          name="newPassword"
-          value={newPassword}
-          type="password"
-          placeholder="New Password"
-          onChange={this.handleChange}
+        <input  className="form-control"  
+        placeholder="Password" 
+        required
+        name="password"
+        value={newPassword}
+        type="password"
+        onChange={this.handleChange}
+        
         />
-        <button type="submit">Change Password</button>
-      </form>
+</div>
+<button type="submit" class="btn btn-outline-secondary">Change</button>
+</form>
     )
   }
 }
